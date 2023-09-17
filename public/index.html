@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scrum Poker</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Croissant+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Scrum Poker</h1>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Create A Room</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Join A Room</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <section id="section-voting">
+            <div class="results">
+                <h2>Voted:</h2>
+                <p>4/5</p>
+            </div>
+            <ul id="card-list">
+                <li class="card">1</li>
+                <li class="card">2</li>
+                <li class="card">3</li>
+                <li class="card">✨</li>
+                <!-- <li class="card face-down"></li> -->
+            </ul>
+        </section>
+
+        <section id="section-results">
+            <div class="results">
+                <h2>Average:</h2>
+                <p>1.50</p>
+            </div>
+            <ul id="voter-list">
+                <li class="voter">
+                    <div class="vote-container">
+                        <p class="voter-name">Ayşe</p>
+                        <div class="vote">1</div>
+                    </div>
+                </li>
+                <li class="voter">
+                    <div class="vote-container">
+                        <p class="voter-name">Fatma</p>
+                        <div class="vote">2</div>
+                    </div>
+                </li>
+                <li class="voter">
+                    <div class="vote-container">
+                        <p class="voter-name">Hayriye</p>
+                        <div class="vote">1</div>
+                    </div>
+                </li>
+                <li class="voter">
+                    <div class="vote-container">
+                        <p class="voter-name">Ahmet</p>
+                        <div class="vote">3</div>
+                    </div>
+                </li>
+                <li class="voter">
+                    <div class="vote-container">
+                        <p class="voter-name">Mehmet</p>
+                        <div class="vote face-down"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>İsmail Sezer Bullalıoğlu &copy; 2023</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../src/client/index.js"></script>
+</body>
+</html>
