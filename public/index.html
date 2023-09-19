@@ -7,6 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Scrum Poker</title>
 
+    <!-- Favicon -->
+    <link id="favicon" rel="icon" href="icons/favicon.ico">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,15 +47,15 @@
         <section id="section-voting">
             <div class="results">
                 <h2>Voted:</h2>
-                <p>4/5</p>
+                <p><span id="vote-counter"></span>/5</p>
             </div>
-            <ul id="card-list">
-                <li class="card">1</li>
-                <li class="card">2</li>
-                <li class="card">3</li>
-                <li class="card">✨</li>
+            <div id="card-list">
+                <button class="card" value="1">1</button>
+                <button class="card" value="2">2</button>
+                <button class="card" value="3">3</button>
+                <button class="card" value="X">✨</button>
                 <!-- <li class="card face-down"></li> -->
-            </ul>
+            </div>
         </section>
 
         <section id="section-results">
@@ -57,35 +63,36 @@
                 <h2>Average:</h2>
                 <p>1.50</p>
             </div>
+            <button id="toggle" class="bi bi-eye-fill"></button>
             <ul id="voter-list">
                 <li class="voter">
                     <div class="vote-container">
                         <p class="voter-name">Ayşe</p>
-                        <div class="vote">1</div>
+                        <div class="vote"><span>1</span></div>
                     </div>
                 </li>
                 <li class="voter">
                     <div class="vote-container">
                         <p class="voter-name">Fatma</p>
-                        <div class="vote">2</div>
+                        <div class="vote"><span>2</span></div>
                     </div>
                 </li>
                 <li class="voter">
                     <div class="vote-container">
                         <p class="voter-name">Hayriye</p>
-                        <div class="vote">1</div>
+                        <div class="vote"><span>1</span></div>
                     </div>
                 </li>
                 <li class="voter">
                     <div class="vote-container">
                         <p class="voter-name">Ahmet</p>
-                        <div class="vote">3</div>
+                        <div class="vote"><span>3</span></div>
                     </div>
                 </li>
                 <li class="voter">
                     <div class="vote-container">
                         <p class="voter-name">Mehmet</p>
-                        <div class="vote face-down"></div>
+                        <div class="vote"><span>1</span></div>
                     </div>
                 </li>
             </ul>
