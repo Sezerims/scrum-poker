@@ -54,7 +54,6 @@
                 <button class="card" value="2">2</button>
                 <button class="card" value="3">3</button>
                 <button class="card" value="X">✨</button>
-                <!-- <li class="card face-down"></li> -->
             </div>
         </section>
 
@@ -63,7 +62,10 @@
                 <h2>Average:</h2>
                 <p>1.50</p>
             </div>
-            <button id="toggle" class="bi bi-eye-fill"></button>
+            <div class="room-settings">
+                <button id="anon-voting" class="toggle bi bi-person-fill"></button>
+                <button id="secret-voting" class="toggle bi bi-eye-fill"></button>
+            </div>
             <ul id="voter-list">
                 <li class="voter">
                     <div class="vote-container">
