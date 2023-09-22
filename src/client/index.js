@@ -13,12 +13,8 @@ voters.forEach(voter => {
     listOfVoters.push(voter.innerText);
 });
 
-let voteCounter = 0;
-
-document.querySelector("#vote-counter").innerText = voteCounter;
-
 cards.forEach(card => card.addEventListener("click", () => {
-    voteCounter = 0;
+    let voteCounter = 0;
     isSelected = card.classList.contains("selected");
     cards.forEach(card => card.classList.remove("selected"));
     if(isSelected) {
